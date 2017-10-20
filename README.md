@@ -9,11 +9,11 @@ Forked by [python-can](https://github.com/hardbyte/python-can).So
 
 ### Usage
 ```python
-import tcpcan
+import can
 
 
-bus = tcpcan.interface.Bus(bustype='tcpcan', channel="192.168.1.10:4001")
-msg = tcpcan.Message(arbitration_id=id,
+bus = can.interface.Bus(bustype='tcpcan', channel="192.168.1.10:4001")
+msg = can.Message(arbitration_id=id,
                       data=data,
                       extended_id=False,
                       is_remote_frame=False,
